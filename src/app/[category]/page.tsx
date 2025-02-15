@@ -108,7 +108,7 @@ const fetchPosts = async (category: string) => {
 export default async function Home({
   params,
 }: {
-  params: { category: string };
+  params: Promise<{ category: string }>;
 }) {
   const { category } = await params;
 
